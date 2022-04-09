@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useFirebase from "../../useFirebase/useFirebase";
 import "./Header.css";
 
 const Header = () => {
-  const navigate = useNavigate();
   const { user, handelSignOut, handelGoogleSignup } = useFirebase();
   const [active, setActive] = useState(true);
   return (
     <div className="header">
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
+        {user?.uid && <Link to="/products">Products</Link> }
         <Link to="/signup">Signup</Link>
         {!user?.uid && <Link to="/login">Login</Link>}
       </nav>
@@ -20,7 +19,7 @@ const Header = () => {
           onClick={() => setActive(!active)}
           className="profile-img"
           src={user?.photoURL}
-          alt=""
+          alt="profile"
         />
       )}
       {user?.uid && !active && (
