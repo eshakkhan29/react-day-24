@@ -24,6 +24,7 @@ const Header = () => {
       )}
       {user?.uid && !active && (
         <div className="profile">
+          <img className="profile-img" src={user?.photoURL} alt="profile" />
           <b>{user?.displayName}</b>
           <b>{user?.email}</b>
           <button className="logout-button" onClick={handelSignOut}>
