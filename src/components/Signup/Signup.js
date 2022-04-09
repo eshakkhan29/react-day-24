@@ -7,7 +7,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const { handelGoogleSignup } = useFirebase();
   return (
-    <>
+    <div className="form-page">
       <form>
         <h3>Signup</h3>
         <input type="text" placeholder="Your name" /> <br />
@@ -21,7 +21,7 @@ const Signup = () => {
         <span onClick={() => navigate("/login")}>have account?</span>
       </form>
       <button onClick={handelGoogleSignup}>Login with Google</button>
-    </>
+    </div>
   );
 };
 

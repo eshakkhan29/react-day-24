@@ -6,7 +6,7 @@ const Login = () => {
   const { handelGoogleSignup } = useFirebase();
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="form-page">
       <form>
         <h3>Login</h3>
         <input type="email" name="" placeholder="Your email" id="" />
