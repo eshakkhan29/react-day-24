@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <nav>
         <Link to="/">Home</Link>
-        {user?.uid && <Link to="/products">Products</Link> }
+        <Link to="/products">Products</Link>
         <Link to="/signup">Signup</Link>
         {!user?.uid && <Link to="/login">Login</Link>}
       </nav>
