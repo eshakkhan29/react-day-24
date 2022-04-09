@@ -1,0 +1,46 @@
+form{
+    margin-top: 50px;
+}
+input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid goldenrod;
+    outline: none;
+    border-radius: 10px;
+    color: goldenrod;
+}
+form h3{
+    color: goldenrod;
+}
+form span{
+    text-decoration: underline;
+    color: #6868fe;
+    font-size: 16px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+button{
+    border: 1px solid goldenrod;
+    background: white;
+    color: goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+button:hover{
+    background: goldenrod;
+    color: white;
+}
+.submit-button{
+    background: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .4s ease;
+
+}
+.submit-button:hover{
+    background: goldenrod;
+    color: white;
+}
